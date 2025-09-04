@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人摄影作品集：自然风光、人像、街拍、微距等专业摄影作品与服务。">
+    <meta property="og:title" content="我的摄影作品集">
+    <meta property="og:description" content="展示我的专业摄影作品与服务，欢迎合作与预约。">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <title>我的摄影作品集</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>摄影作品集</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">作品集</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系我</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="切换主题"><i class="fas fa-moon"></i></button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">捕捉美好瞬间</h1>
+            <p class="hero-subtitle">用镜头记录生活的每一个精彩时刻</p>
+            <a href="#portfolio" class="cta-button">查看作品</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="摄影作品">
+        </div>
+    </section>
+
+    <!-- 精选作品：前后对比 -->
+    <section class="featured">
+        <div class="container">
+            <div class="featured-header">
+                <h2 class="section-title">精选修图前后对比</h2>
+                <p class="section-subtitle">展示从原片到成片的风格诠释与后期掌控</p>
+            </div>
+            <div class="before-after" aria-label="前后对比滑块">
+                <img class="before" src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=1600&q=60" alt="Before">
+                <img class="after" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=80" alt="After">
+                <div class="slider">
+                    <div class="handle"><i class="fas fa-arrows-left-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品分类筛选 -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="nature">自然风光</button>
+                <button class="filter-btn" data-filter="portrait">人像摄影</button>
+                <button class="filter-btn" data-filter="street">街拍</button>
+                <button class="filter-btn" data-filter="macro">微距</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集展示 -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">我的作品</h2>
+            <div class="portfolio-grid">
+                <!-- 自然风光 -->
+                <div class="portfolio-item" data-category="nature" data-exif='{"camera":"Canon R5","lens":"RF 24-70mm","iso":100,"aperture":"f/8","shutter":"1/250s"}'>
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="山景">
+                        <div class="portfolio-overlay">
+                            <h3>山峦叠嶂</h3>
+                            <p>自然风光</p>
+                            <ul class="exif">
+                                <li>Canon R5 · RF 24-70</li>
+                                <li>ISO 100 · f/8 · 1/250s</li>
+                            </ul>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="nature">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="森林">
+                        <div class="portfolio-overlay">
+                            <h3>森林秘境</h3>
+                            <p>自然风光</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="nature">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="湖泊">
+                        <div class="portfolio-overlay">
+                            <h3>湖光山色</h3>
+                            <p>自然风光</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 人像摄影 -->
+                <div class="portfolio-item" data-category="portrait" data-exif='{"camera":"Sony A7IV","lens":"85mm f/1.4","iso":200,"aperture":"f/2","shutter":"1/500s"}'>
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="人像">
+                        <div class="portfolio-overlay">
+                            <h3>优雅人像</h3>
+                            <p>人像摄影</p>
+                            <ul class="exif">
+                                <li>Sony A7IV · 85mm</li>
+                                <li>ISO 200 · f/2 · 1/500s</li>
+                            </ul>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="portrait">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="人像">
+                        <div class="portfolio-overlay">
+                            <h3>自然表情</h3>
+                            <p>人像摄影</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 街拍 -->
+                <div class="portfolio-item" data-category="street" data-exif='{"camera":"Fujifilm X100V","lens":"23mm","iso":400,"aperture":"f/4","shutter":"1/1000s"}'>
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="街拍">
+                        <div class="portfolio-overlay">
+                            <h3>城市生活</h3>
+                            <p>街拍</p>
+                            <ul class="exif">
+                                <li>Fujifilm X100V · 23mm</li>
+                                <li>ISO 400 · f/4 · 1/1000s</li>
+                            </ul>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="street">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80" alt="街拍">
+                        <div class="portfolio-overlay">
+                            <h3>都市节奏</h3>
+                            <p>街拍</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 微距 -->
+                <div class="portfolio-item" data-category="macro">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="花朵微距">
+                        <div class="portfolio-overlay">
+                            <h3>花朵细节</h3>
+                            <p>微距摄影</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="macro">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" alt="昆虫微距">
+                        <div class="portfolio-overlay">
+                            <h3>微观世界</h3>
+                            <p>微距摄影</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务与价格 -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">专业服务</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-user"></i>
+                    <h3>人像写真</h3>
+                    <p>棚内/外景，妆造与修图，适合职业形象与艺术写真。</p>
+                    <span class="price">¥1,299 起</span>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-ring"></i>
+                    <h3>婚礼跟拍</h3>
+                    <p>全程纪实与摆拍结合，多机位捕捉每个动人瞬间。</p>
+                    <span class="price">¥6,999 起</span>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>商业拍摄</h3>
+                    <p>品牌形象、活动记录、产品静物，提供全流程视觉方案。</p>
+                    <span class="price">定制报价</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据与口碑 -->
+    <section class="stats-testimonial">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat"><span class="counter" data-target="120">0</span><p>商业项目</p></div>
+                <div class="stat"><span class="counter" data-target="350">0</span><p>客户好评</p></div>
+                <div class="stat"><span class="counter" data-target="15">0</span><p>奖项与入选</p></div>
+                <div class="stat"><span class="counter" data-target="10">0</span><p>年拍摄经验</p></div>
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>“专业、耐心且极具美学品味，最终交付超出预期。”</p>
+                    <div class="author"><img src="https://i.pravatar.cc/60?img=5" alt=""><span>Li Wei · 品牌市场经理</span></div>
+                </div>
+                <div class="testimonial">
+                    <p>“捕捉情绪的能力很强，修图风格高级自然，强烈推荐。”</p>
+                    <div class="author"><img src="https://i.pravatar.cc/60?img=14" alt=""><span>Zhang Yan · 新娘</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 资质与客户 -->
+    <section class="credentials">
+        <div class="container">
+            <div class="cred-grid">
+                <div class="awards">
+                    <h3>资质与奖项</h3>
+                    <ul>
+                        <li><i class="fas fa-award"></i> IPA 国际摄影奖 入选</li>
+                        <li><i class="fas fa-trophy"></i> 中国人像摄影大赛 金奖</li>
+                        <li><i class="fas fa-certificate"></i> Adobe 认证专家（ACE）</li>
+                    </ul>
+                </div>
+                <div class="clients">
+                    <h3>合作客户</h3>
+                    <div class="logo-wall">
+                        <img src="https://dummyimage.com/120x50/ccd2d8/ffffff&text=Brand+A" alt="Brand A">
+                        <img src="https://dummyimage.com/120x50/d1d5db/ffffff&text=Brand+B" alt="Brand B">
+                        <img src="https://dummyimage.com/120x50/cbd5e1/ffffff&text=Brand+C" alt="Brand C">
+                        <img src="https://dummyimage.com/120x50/e2e8f0/ffffff&text=Brand+D" alt="Brand D">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>关于我</h2>
+                    <p>我是一名热爱摄影的创作者，专注于捕捉生活中的美好瞬间。通过镜头，我记录下大自然的壮丽景色、人物的真实情感，以及城市生活的点点滴滴。</p>
+                    <p>每一张照片都是我内心世界的表达，希望能够通过我的作品，与您分享这个世界的美丽与感动。</p>
+                    <div class="skills">
+                        <div class="skill">
+                            <h4>自然风光</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h4>人像摄影</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h4>街拍</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h4>微距摄影</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="摄影师">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 订阅区块 -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-card">
+                <h3>订阅最新作品与活动</h3>
+                <p>第一时间获取我的最新拍摄项目与限定优惠。</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="输入您的邮箱" required>
+                    <button type="submit">立即订阅</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>photographer@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>电话</h4>
+                            <p>+86 138-0000-0000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>地址</h4>
+                            <p>中国，北京</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="您的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="您的消息" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 我的摄影作品集. 保留所有权利.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-wechat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 图片模态框 -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- 分享面板 -->
+    <div class="share-fab" aria-label="分享">
+        <i class="fas fa-share-alt"></i>
+    </div>
+    <div class="share-sheet" id="shareSheet" aria-hidden="true">
+        <div class="share-card">
+            <div class="share-header">
+                <h4>分享这个页面</h4>
+                <button class="share-close" aria-label="关闭"><i class="fas fa-times"></i></button>
+            </div>
+            <p class="share-tip">在微信中：可长按二维码识别，或复制链接发送好友/朋友圈</p>
+            <div class="share-actions">
+                <button class="btn-share-system"><i class="fas fa-paper-plane"></i> 系统分享</button>
+                <button class="btn-share-copy"><i class="fas fa-link"></i> 复制链接</button>
+            </div>
+            <div class="share-qr">
+                <div id="qrcode"></div>
+                <div class="qr-caption">扫码在微信中打开</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
