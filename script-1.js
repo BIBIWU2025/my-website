@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const category = overlay.querySelector('p').textContent;
 
         img.addEventListener('click', function() {
-            modal.style.display = 'block';
+            modal.style.display = 'flex';
             modalImg.src = this.src;
             modalCaption.textContent = `${title} - ${category}`;
             document.body.style.overflow = 'hidden'; // 防止背景滚动
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // 点击overlay中的放大镜图标
         overlay.querySelector('i').addEventListener('click', function() {
-            modal.style.display = 'block';
+            modal.style.display = 'flex';
             modalImg.src = img.src;
             modalCaption.textContent = `${title} - ${category}`;
             document.body.style.overflow = 'hidden';
@@ -421,3 +421,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('摄影作品集网站已加载完成！');
 });
+
